@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JC-DOS</title>
+        <link rel=stylesheet href=style.css>
+        <link rel=icon href=assets/logo.png>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    </head>
+    <body>
+        <div id=icon-grid>
+            <div class=app-shortcut>
+                <img src="assets/projects.png" class=icon onclick="new win('Projects','<iframe frameborder=0 src=https://jierueichang.github.io/projects.html>',600,600)">
+                <p class=app-name>Projects</p>
+            </div>
+            <div class=app-shortcut>
+                <img src="assets/journal.png" class=icon onclick="new win('Journal','<iframe frameborder=0 src=https://jierueichang.github.io/journal.html>',500,600)">
+                <p class=app-name>Journal</p>
+            </div>
+            <div class=app-shortcut>
+                <img src="assets/contact.png" class=icon onclick="new win('Contact','<iframe frameborder=0 src=https://jierueichang.github.io/contact.html>',400,600)">
+                <p class=app-name>Contact</p>
+            </div>
+            <div class=app-shortcut>
+                <img src="assets/terminal.png" class=icon onclick="new win('Terminal','<iframe frameborder=0 src=embeds/terminal/terminal.html>')">
+                <p class=app-name>Terminal</p>
+            </div>
+            <div class=app-shortcut>
+                <img src="assets/settings.png" class=icon onclick="new win('Settings','<iframe frameborder=0 src=embeds/settings/settings.html>',500)">
+                <p class=app-name>Settings</p>
+            </div>
+            <div class=app-shortcut>
+                <img src="assets/games.png" class=icon onclick="new win('Games','<iframe frameborder=0 src=embeds/games/games.html>')">
+                <p class=app-name>Games</p>
+            </div>
+        </div>
+        <div id=taskbar>
+            <img src="assets/logo.png" id=logo onclick="shutdown()">
+            <div id=tabs>
+            </div>
+        </div>
+        <div id=window-div></div>
+        <div id=power-div> <!-- overlay that covers screen when in "sleep mode"-->
+            <h1>Guest@JCDOS</h1>
+            <button onclick="poweron()" id=power-button>Log In</button>
+        </div>
+        <script src=window.js></script>
+    </body>
+</html>

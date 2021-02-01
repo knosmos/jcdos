@@ -1,0 +1,25 @@
+body{
+    font-family: "Segoe UI", Verdana, Geneva, Tahoma, sans-serif;
+    padding:10px;
+}
+
+h1, h2{
+    font-weight: 400;
+    margin:10px;
+}
+
+button{
+    display:block;
+    margin:10px;
+    width:90%;
+    box-sizing: border-box;
+    border:2px solid rgb(255, 0, 128);
+    background-color:transparent;
+    font-family: "Segoe UI", Verdana, Geneva, Tahoma, sans-serif;font-family: "Segoe UI", Verdana, Geneva, Tahoma, sans-serif;
+    padding:10px;
+    font-size:14pt;
+    transition: background-color 0.3s;
+}
+button:hover{
+    background-color: rgb(241, 241, 241);
+}

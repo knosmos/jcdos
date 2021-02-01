@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel=stylesheet href=settings.css>
+    </head>
+    <body>
+        <h1>Settings</h1>
+        <h2>Wallpaper</h2>
+        <p>Select background</p>
+        <div id=grid>
+            <div class=icon onclick="change('bliss.jpg')" style="background-image:url(../../assets/backgrounds/bliss.jpg)"></div>
+            <div class=icon onclick="change('mountains.jpg')" style="background-image:url(../../assets/backgrounds/mountains.jpg)"></div>
+            <div class=icon onclick="change('trees.jpg')" style="background-image:url(../../assets/backgrounds/trees.jpg)"></div>
+            <div class=icon onclick="change('jupiter.jpg')" style="background-image:url(../../assets/backgrounds/jupiter.jpg)"></div>
+        </div>
+        <em><small>these wallpapers are not mine</small></em>
+        <h2>Network</h2>
+        <label>
+            <input type="checkbox" checked>
+            WiFi
+        </label>
+        <br>
+        <label>
+            <input type="checkbox">
+            Airplane Mode
+        </label>
+        <br>
+        <label>
+            <input type="checkbox">
+            Boat Mode
+        </label>
+        <br>
+        <h2>Data Usage and Tracking</h2>
+        <label>
+            <input type="checkbox" checked>
+            Steal data
+        </label>
+        <br>
+        <label>
+            <input type="checkbox" checked>
+            Run a keylogger to find my passwords
+        </label>
+        <br>
+        <label>
+            <input type="checkbox" checked>
+            Post search history on Reddit
+        </label>
+        <br><br>
+        <em><small>btw these settings are a joke I'm stealing your data even if you uncheck them</small></em>
+        <h2>System</h2>
+        <p>System Version: JCDOS version 13.593 (Jan. 1970)</p>
+        <p>Device Specifications</p>
+        <ul>
+            <li>Device Name: Bob</li>
+            <li>Processor: A dev typing really fast</li>
+            <li>Installed RAM: 2 sheep (1.8 sheep usable)</li>
+            <li>Pen and Touch: Quill/Fountain pen support</li>
+        </ul>
+        <script>
+            function change(img){
+                window.parent.document.body.style.backgroundImage = `url("assets/backgrounds/${img}")`;
+                window.parent.localStorage.setItem("background",img);
+            }
+        </script>
+   </body>
+</html>

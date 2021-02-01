@@ -1,0 +1,13 @@
+body{
+    background-color:black;
+    font-family: monospace;
+    color:white;
+    font-size:12pt;
+}
+p{
+    margin-top:2px;
+    margin-bottom:2px;
+}
+.prompt{
+    color:rgb(123, 201, 123);
+}

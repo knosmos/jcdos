@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel=stylesheet href=games.css>
+    </head>
+    <body>
+        <h2>"Games"</h2>
+        <button onclick="openGame('Checkers','https://knosmos.github.io/checkers/',550,650)">Checkers</button>
+        <button onclick="openGame('Contagion','https://knosmos.github.io/contagion/',800,600)">Contagion</button>
+        <button onclick="openGame('Turtles Ad Infinitum','https://knosmos.github.io/turtles/',500,400)">Turtles Ad Infinitum</button>
+        <button onclick="openGame('PetriDish','https://knosmos.github.io/petridish',800,600)">Petri Dish Simulator</button>
+        <button onclick="openGame('WatchPaintDry','https://knosmos.github.io/watchpaintdry',500,400)">Watch Paint Dry</button>
+        <script>
+            function openGame(title,link,w,h){
+                window.parent.add(title,`
+                <iframe frameborder=0 src=${link}>
+                `,w,h);
+            }
+        </script>
+    </body>
+</html>
