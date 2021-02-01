@@ -119,3 +119,13 @@ if (b === null){
     b = "bliss.jpg";
 }
 document.body.style.backgroundImage = `url("assets/backgrounds/${b}")`;
+if ( window.addEventListener ) {
+    var kkeys = [], konami = "38,38,40,40,37,39,37,39,66,65";
+    window.addEventListener("keydown", function(e){
+        kkeys.push( e.keyCode );
+        if ( kkeys.toString().indexOf( konami ) >= 0 ){
+            document.body.style.backgroundImage = `url("assets/hackerman.jpg")`;
+            kkeys = [];            
+        }
+    }, true);
+}
