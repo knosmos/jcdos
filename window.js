@@ -116,7 +116,7 @@ function add(text,content,w,h){
 // change background (if background has been changed)
 let b = localStorage.getItem("background");
 if (b === null){
-    b = "bliss.jpg";
+    b = "mountains.jpg";
 }
 document.body.style.backgroundImage = `url("assets/backgrounds/${b}")`;
 if ( window.addEventListener ) {
